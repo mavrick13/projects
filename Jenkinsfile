@@ -10,6 +10,7 @@ pipeline {
     stage('docker') {
       steps {
         dockerNode(image: 'ubuntu')
+        echo 'docker success'
       }
     }
 
